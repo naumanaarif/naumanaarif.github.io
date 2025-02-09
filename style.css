@@ -1,11 +1,11 @@
 /* GLOBAL */
 
 :root {
-    --bg-body: hsl(0, 0%, 8%);
-    --bg-body2: hsl(0, 0%, 14%);
-    --accent: hsl(216, 99%, 50%);
+    --bg-body: #212a3e;
+    --bg-body2: #394867;
+    --accent: #9ba4b5;
     --text1: hsl(0, 0%, 100%);
-    --text2: hsl(0, 0%, 80%);
+    --text2: hsl(219, 15%, 80%);
     --invalid: hsl(7, 100%, 68%);
     --fs-18: 1.125rem;
     --fs-88: 5.5rem;
@@ -17,7 +17,7 @@
     --fs-24: 1.5rem;
     --fs-20: 1.25rem;
     --container: 69.375rem;
-    --transition: 200ms ease-in-out;
+    --transition: 120ms ease-in-out;
   }
   
   html,
@@ -31,8 +31,8 @@
   }
   
   ::selection {
-    color: var(--accent);
-    background: #DFF0D8;
+    color: var(--bg-body2);
+    background: #f1f6f9;
   }
   
   *,
@@ -605,11 +605,11 @@
       top: 0;
       background-color: hsl(0, 0%, 0%);
       opacity: 0;
-      transition: opacity 150ms ease-in-out;
+      transition: opacity 120ms ease-in-out;
     }
   
     .projects__item:hover .projects__picture::after {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   
     .projects__item:hover .projects__links {
@@ -620,7 +620,7 @@
     }
   
     .projects__item:focus-within .projects__picture::after {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   
     .projects__image {
@@ -635,7 +635,7 @@
       align-self: center;
       z-index: 1;
       opacity: 0;
-      transition: opacity 400ms ease-in-out;
+      transition: opacity 120ms ease-in-out;
     }
   
     .projects__links:hover ~ .projects__picture::after {
